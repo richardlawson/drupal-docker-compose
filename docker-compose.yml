@@ -24,5 +24,6 @@ mysql:
         MYSQL_ROOT_PASSWORD: password
     volumes:
         - ./mysqldata:/var/lib/mysql/
+        - ./my.cnf:/etc/mysql/my.cnf
 
     
