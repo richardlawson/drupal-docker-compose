@@ -1,0 +1,5 @@
+#!/bin/bash
+
+args="$@"
+docker-compose exec php /code/vendor/bin/drush $args
+
