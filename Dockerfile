@@ -7,7 +7,12 @@ RUN apt-get install -y \
     zip \
     curl \
     sudo \
-    unzip 
+    unzip \
+    libpng-dev
 
 RUN docker-php-ext-install \
-    pdo_mysql 
+    pdo_mysql \
+    gd
+    
+RUN docker-php-ext-enable \
+    opcache
