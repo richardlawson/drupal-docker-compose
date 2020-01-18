@@ -43,12 +43,22 @@ You should hopefully see install instructions for your new drupal site.
 8. When you get to the instructions for the database select 'mysql' add the following:
 
 db name: drupal
-db username: drupal
+db username: root
 password: password
 
 And under advanced options add the following:
 
 host: mysql
+
+Finish the rest of the install pages
+
+9. To stop the site run the following command:
+
+docker-compose stop
+
+NB: You can run drush in the root folder by running the following command:
+
+./drush 
 
 
 
