@@ -72,7 +72,7 @@ host: mysql
 
 Finish the rest of the install pages
 
-9. To stop the site run the following command:
+NB: To stop the site at any time, run the following command:
 
 ```
 docker-compose stop
