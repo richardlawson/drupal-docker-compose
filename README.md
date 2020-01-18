@@ -1,3 +1,5 @@
+## Drupal 8 with Docker Compose
+
 This project contains a fresh install of drupal 8 and contains the necessary docker images for running the new site.
 
 Steps for getting docker 8 up and running:
