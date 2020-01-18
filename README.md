@@ -15,7 +15,7 @@ Prerequisites:
 git clone https://github.com/richardlawson/drupal-docker-compose.git
 ```
 
-2. An new folder called drupal-docker-compose will be created. You should cd into that:
+2. A new folder called drupal-docker-compose will be created. You should cd into that:
 
 ```
 cd drupal-docker-compose
@@ -56,7 +56,7 @@ http://drupal8.local:8080/
 
 You should hopefully see install instructions for your new drupal site.
 
-8. When you get to the instructions for the database select 'mysql' add the following:
+8. When you get to the instructions for the database select 'mysql' and add the following:
 
 ```
 db name: drupal
@@ -84,7 +84,35 @@ NB: You can run drush in the root folder by running the following command:
 ./drush 
 ```
 
+NB: If you would prefer to run the site without adding port info, edit the docker-compose.yml file
 
+e.g. http://drupal8.local instead of http://drupal8.local:8080
 
+And change the following:
+
+```
+ports:
+        - "8080:80"
+```
+
+to:
+
+```
+ports:
+        - "80:80"
+```
+
+You will also have to make sure that you don't have any services running on port 80
+
+NB: You can access the docker mysql server on your local computer by using mysql work bench.
+
+To do so, add a new connection and use the following settings:
+
+```
+hostname: 127.0.0.1
+port: 3307
+username: root
+password: password
+```
 
 
